@@ -18,12 +18,17 @@
   font-family: Montserrat-Light;
   src: url(./fonts/Montserrat-Light.otf);
 }
+@font-face {
+  font-family: Montserrat-SemiBold;
+  src: url(./fonts/Montserrat-SemiBold.otf);
+}
 body {
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
   font-family: Montserrat;
   background-color: var(--main-bg);
+  color: var(--nav-menu);
 }
 a {
   color: var(--nav-menu);
@@ -41,7 +46,7 @@ header {
 }
 .hero-container {
   padding: 2rem 4rem;
-  color: var(--nav-menu);
+
   min-height: 600px;
   position: relative;
 }
@@ -57,6 +62,8 @@ header {
 }
 .hero-description {
   padding: 1rem 0px;
+  font-size: 14px;
+  font-family: Montserrat-Light;
 }
 .header-divider {
   min-height: 120px;
@@ -65,7 +72,6 @@ header {
 }
 .nav-menu-wrapper {
   list-style: none;
-  color: var(--nav-menu);
   font-size: 21px;
 }
 .hero-button-wrapper {
@@ -77,9 +83,11 @@ header {
   font-size: 13px;
   cursor: pointer;
 }
-.whitepaper {
+.whitepaper,
+.joinus {
   background: var(--button-bg);
-  color: var(--nav-menu);
+  border: none;
+
   width: 140px;
 }
 .whitepaper:hover i,
@@ -108,10 +116,140 @@ header {
   position: absolute;
   left: 0px;
   top: 87%;
-  min-height: 250px;
+  min-height: 340px;
   width: 100%;
   background-image: url(../img/hero-footer.png);
   background-size: cover, contain;
   background-repeat: no-repeat;
   background-position: 0px -50px;
+}
+.hero-middle-container {
+  margin-top: 220px;
+}
+.hero-middle-title {
+  font-weight: bold;
+}
+.hero-middle-description {
+  font-family: Montserrat-Light;
+  font-size: 14px;
+  margin-top: 3rem;
+}
+.hero-middle-icon-container {
+  font-family: Montserrat-Light;
+  font-size: 14px;
+  margin-top: 3rem;
+}
+.hero-middle-icon {
+  width: 100px;
+  height: 100px;
+}
+.icon-1 {
+  background-image: url(../img/gold-icon.png);
+}
+.icon-2 {
+  background-image: url(../img/arrow-icon.png);
+}
+.icon-3 {
+  background-image: url(../img/contact-icon.png);
+}
+.hero-middle-price {
+  color: var(--hero-title);
+  font-family: Montserrat-SemiBold;
+}
+.hero-middle-card-description {
+  font-size: 12px;
+  font-family: Montserrat-Light;
+  line-height: 0;
+  margin-top: -8px;
+}
+.partnerships-container {
+  margin-top: 3rem;
+  background-image: url(../img/partner-bg.png);
+  background-size: cover, contain;
+  color: black;
+  min-height: 1300px;
+}
+.partnerships-title {
+  margin-top: 200px;
+}
+.partnerships-description {
+  margin-top: 4rem;
+}
+.partnerships-card-container,
+.partnerships-second-text {
+  margin-top: 5rem;
+}
+.partnerships-img {
+  width: 250px;
+}
+.joinus {
+  color: var(--nav-menu);
+  margin-top: 2rem;
+}
+.tokenomics-container {
+  margin-top: 4rem;
+}
+.tokenomics-title {
+  color: var(--hero-title);
+  font-family: Montserrat-SemiBold;
+}
+.tokenomics-description {
+  font-family: Montserrat-Light;
+  margin-top: 3rem;
+}
+.tokenomics-item {
+  background-color: var(--hero-title);
+  border-radius: 60px;
+}
+.number {
+  border-radius: 50%;
+  background-color: var(--main-bg);
+}
+.tokenomics-graph-wrapper {
+  background-image: url(../img/graph-bg.png);
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-size: contain, cover;
+}
+.context-wrapper {
+  line-height: 0;
+}
+.tokenomics-context-title {
+  margin-top: 14px;
+  font-size: 14px;
+  color: black;
+  font-family: Montserrat-SemiBold;
+}
+.tokenomics-context-description {
+  font-size: 12px;
+  font-family: Montserrat-Light;
+  color: rgba(255, 255, 255, 0.623);
+}
+footer {
+  background-image: url(../img/footer-bg.png);
+  background-size: cover, contain;
+  min-height: 300px;
+  padding: 6rem;
+}
+.footer-item-wrapper {
+  padding: 4rem;
+}
+.footer-logo {
+  width: 320px;
+}
+.footer-item-middle,
+.footer-item-right {
+  margin-top: 50px;
+}
+ul {
+  list-style: square;
+  color: var(--hero-title);
+}
+li span {
+  color: var(--nav-menu);
+  font-family: Montserrat-Light;
+  font-size: 14px;
+}
+.footer-social {
+  color: var(--hero-title);
 }
